@@ -46,9 +46,13 @@ $arms-yellow: #feff01;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    color: black;
+    background-color: $arms-yellow;
+    
+    &.loaded {
+        display: none;
+    }
 }
-
 
 main.stage {
     position: absolute;
