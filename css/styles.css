@@ -84,7 +84,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red; }
+  color: black;
+  background-color: #feff01; }
+  .loader.loaded {
+    display: none; }
 
 main.stage {
   position: absolute;
