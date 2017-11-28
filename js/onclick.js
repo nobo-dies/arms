@@ -38,5 +38,5 @@ $(document).ready(function(){
 });
 
 $(window).bind("load", function() {
-   $("#main-content").addClass("loaded");
+   $("#loader").addClass("loaded");
 });
