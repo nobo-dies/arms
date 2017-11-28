@@ -2,6 +2,10 @@ var arr = ["Spring Man", "Ribbon Girl", "Ninjara", "Master Mummy", "Min Min", "M
 var art = ["spring", "ribbon", "ninja", "master", "min", "mech", "helix"];
 var num = ["1", "2", "3", "4", "5", "6", "7"];
 
+$(window).load(function() {
+    $(".loader").addClass("loaded");
+});
+
 $(document).ready(function(){
     $("li.fighter-avatar").each(function (index) {
         
@@ -35,8 +39,4 @@ $(document).ready(function(){
             $(this).addClass("fighter-avatar--active").siblings().removeClass("fighter-avatar--active");
         });
     });
-});
-
-$(window).bind("load", function() {
-   $("#loader").addClass("loaded");
 });
