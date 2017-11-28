@@ -85,7 +85,7 @@ body {
   align-items: center;
   justify-content: center;
   color: black;
-  background-color: #feff01;
+  background-color: pink;
   z-index: 999;
   opacity: .9; }
   .loader.loaded {
