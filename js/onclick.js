@@ -2,7 +2,7 @@ var arr = ["Spring Man", "Ribbon Girl", "Ninjara", "Master Mummy", "Min Min", "M
 var art = ["spring", "ribbon", "ninja", "master", "min", "mech", "helix"];
 var num = ["1", "2", "3", "4", "5", "6", "7"];
 
-$(window).load(function() {
+$(window).on("load", function() {
     $(".loader").addClass("loaded");
 });
 
