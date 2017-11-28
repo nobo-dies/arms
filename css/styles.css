@@ -1,10 +1,5 @@
-@font-face {
-  font-family: 'montserratblack';
-  src: url("montserrat-black-webfont.woff2") format("woff2"), url("montserrat-black-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 body {
-  font-family: 'montserratblack', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background: black;
   color: white;
   margin: 0;
@@ -297,7 +292,7 @@ section.selection {
   section.selection .fighter-selection {
     display: flex;
     align-items: center;
-    font-family: 'montserratblack', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em; }
     section.selection .fighter-selection .fighter-avatar {
       position: relative;
