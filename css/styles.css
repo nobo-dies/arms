@@ -84,8 +84,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: red;
-  background-color: #feff01; }
+  color: black;
+  background-color: #feff01;
+  z-index: 999;
+  opacity: .9; }
   .loader.loaded {
     display: none; }
 

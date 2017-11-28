@@ -46,8 +46,10 @@ $arms-yellow: #feff01;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: red;
+    color: black;
     background-color: $arms-yellow;
+    z-index: 999;
+    opacity: .9;
     
     &.loaded {
         display: none;
