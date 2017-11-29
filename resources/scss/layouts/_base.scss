@@ -35,6 +35,8 @@ ul {
     justify-content: center;
     color: black;
     background-color: $main-colour;
+    opacity: 1;
+    transition: .3s ease;
     z-index: 999;
     
     .loading__logo {
@@ -50,6 +52,7 @@ ul {
     }
     
     &.loading--hide {
-        display: none;
+        left: -9999;
+        opacity: 0;
     }
 }

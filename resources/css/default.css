@@ -391,6 +391,8 @@ ul {
   justify-content: center;
   color: black;
   background-color: #fdfe0c;
+  opacity: 1;
+  transition: .3s ease;
   z-index: 999; }
   #loading .loading__logo {
     max-width: 690px;
@@ -401,6 +403,7 @@ ul {
     right: 53px;
     width: 300px; }
   #loading.loading--hide {
-    display: none; }
+    left: -9999;
+    opacity: 0; }
 
 /*# sourceMappingURL=default.css.map */
