@@ -24,7 +24,7 @@ ul {
     list-style: none;
 }
 
-.loader {
+#loading {
     position: absolute;
     top: 0;
     right: 0;
@@ -34,11 +34,22 @@ ul {
     align-items: center;
     justify-content: center;
     color: black;
-    background-color: pink;
+    background-color: $main-colour;
     z-index: 999;
-    opacity: .9;
     
-    &.loaded {
+    .loading__logo {
+        max-width: 690px;
+        width: 100%;
+    }
+    
+    .loading__tag {
+        position: absolute;
+        bottom: 0;
+        right: 53px;
+        width: 300px;
+    }
+    
+    &.loading--hide {
         display: none;
     }
 }

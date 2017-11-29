@@ -1,3 +1,17 @@
+@each $name, $bg1, $bg2, $swirl in $spring, $ribbon, $ninjara, $master, $min, $mech, $helix {
+    .gradient.gradient--#{$name} {
+        @include background-gradient( $bg1, $bg2 );
+    }
+    #background-abstracts.abstracts--#{$name} {
+        svg #linear-gradient stop {  
+            stop-color: $swirl;
+        }
+        .swirl-3 {
+            fill: $bg1;
+        }
+    }
+}
+
 #background-gradient {
     position: absolute;
     height: 100%;
@@ -20,20 +34,11 @@
     }
 }
 
-@each $name, $bg1, $bg2, $swirl in $spring, $ribbon, $ninjara, $master, $min, $mech, $helix {
-    .gradient.gradient--#{$name} {
-        @include background-gradient( $bg1, $bg2 );
-    }
-    #background-abstracts.abstracts--#{$name} {
-        #linear-gradient-1 stop {  
-            stop-color: $swirl;
-        }
-    }
-}
-
 #background-abstracts {
     .abstracts {
         position: absolute;
+        top: 0;
+        left: 0;
         z-index: 3;
         
         &.abstracts__lines {
@@ -55,21 +60,24 @@
         }
         
         &.abstracts__swirl {
-            right: 300px;
-            top: 54px;
-            left: 0;
+            top: -45vh;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            margin: 0 -50%;
             z-index: 2;
             
             svg {
                 height: 100%;
+                
+                .swirl-1 {
+                    fill: url(#linear-gradient);
+                }
 
-                @for $i from 1 through 5 {
-                    .swirl-#{$i} {
-                        fill: url(#linear-gradient-#{$i});
-                    }
+                .swirl-2 {
+                    fill: url(#linear-gradient-2);
                 }
             }
         }
-        
     }
 }

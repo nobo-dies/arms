@@ -48,6 +48,90 @@
     width: 110%;
     transform: translateY(-9px); }
 
+.gradient.gradient--spring {
+  background: #0558a9;
+  background: -moz-radial-gradient(center, ellipse cover, #097db7 0%, #0558a9 90%);
+  background: -webkit-radial-gradient(center, ellipse cover, #097db7 0%, #0558a9 90%);
+  background: radial-gradient(ellipse at center, #097db7 0%, #0558a9 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
+
+#background-abstracts.abstracts--spring svg #linear-gradient stop {
+  stop-color: #a22e89; }
+#background-abstracts.abstracts--spring .swirl-3 {
+  fill: #097db7; }
+
+.gradient.gradient--ribbon {
+  background: #b50000;
+  background: -moz-radial-gradient(center, ellipse cover, #c43a2f 0%, #b50000 90%);
+  background: -webkit-radial-gradient(center, ellipse cover, #c43a2f 0%, #b50000 90%);
+  background: radial-gradient(ellipse at center, #c43a2f 0%, #b50000 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
+
+#background-abstracts.abstracts--ribbon svg #linear-gradient stop {
+  stop-color: #cf9f09; }
+#background-abstracts.abstracts--ribbon .swirl-3 {
+  fill: #c43a2f; }
+
+.gradient.gradient--ninjara {
+  background: #000036;
+  background: -moz-radial-gradient(center, ellipse cover, #0e4d91 0%, #000036 90%);
+  background: -webkit-radial-gradient(center, ellipse cover, #0e4d91 0%, #000036 90%);
+  background: radial-gradient(ellipse at center, #0e4d91 0%, #000036 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
+
+#background-abstracts.abstracts--ninjara svg #linear-gradient stop {
+  stop-color: #118967; }
+#background-abstracts.abstracts--ninjara .swirl-3 {
+  fill: #0e4d91; }
+
+.gradient.gradient--master {
+  background: #7d7d7d;
+  background: -moz-radial-gradient(center, ellipse cover, #f2f2f2 0%, #7d7d7d 90%);
+  background: -webkit-radial-gradient(center, ellipse cover, #f2f2f2 0%, #7d7d7d 90%);
+  background: radial-gradient(ellipse at center, #f2f2f2 0%, #7d7d7d 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
+
+#background-abstracts.abstracts--master svg #linear-gradient stop {
+  stop-color: #69538b; }
+#background-abstracts.abstracts--master .swirl-3 {
+  fill: #f2f2f2; }
+
+.gradient.gradient--min {
+  background: #16912e;
+  background: -moz-radial-gradient(center, ellipse cover, #85c52c 0%, #16912e 90%);
+  background: -webkit-radial-gradient(center, ellipse cover, #85c52c 0%, #16912e 90%);
+  background: radial-gradient(ellipse at center, #85c52c 0%, #16912e 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
+
+#background-abstracts.abstracts--min svg #linear-gradient stop {
+  stop-color: #b76d1e; }
+#background-abstracts.abstracts--min .swirl-3 {
+  fill: #85c52c; }
+
+.gradient.gradient--mech {
+  background: #ec841a;
+  background: -moz-radial-gradient(center, ellipse cover, #FFA20A 0%, #ec841a 90%);
+  background: -webkit-radial-gradient(center, ellipse cover, #FFA20A 0%, #ec841a 90%);
+  background: radial-gradient(ellipse at center, #FFA20A 0%, #ec841a 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
+
+#background-abstracts.abstracts--mech svg #linear-gradient stop {
+  stop-color: #e1572d; }
+#background-abstracts.abstracts--mech .swirl-3 {
+  fill: #FFA20A; }
+
+.gradient.gradient--helix {
+  background: #04593c;
+  background: -moz-radial-gradient(center, ellipse cover, #1AB593 0%, #04593c 90%);
+  background: -webkit-radial-gradient(center, ellipse cover, #1AB593 0%, #04593c 90%);
+  background: radial-gradient(ellipse at center, #1AB593 0%, #04593c 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
+
+#background-abstracts.abstracts--helix svg #linear-gradient stop {
+  stop-color: #af3a8f; }
+#background-abstracts.abstracts--helix .swirl-3 {
+  fill: #1AB593; }
+
 #background-gradient {
   position: absolute;
   height: 100%;
@@ -65,78 +149,10 @@
     #background-gradient .gradient.gradient--active {
       opacity: 1; }
 
-.gradient.gradient--spring {
-  background: #0558a9;
-  background: -moz-radial-gradient(center, ellipse cover, #097db7 0%, #0558a9 90%);
-  background: -webkit-radial-gradient(center, ellipse cover, #097db7 0%, #0558a9 90%);
-  background: radial-gradient(ellipse at center, #097db7 0%, #0558a9 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
-
-#background-abstracts.abstracts--spring #linear-gradient-1 stop {
-  stop-color: #a22e89; }
-
-.gradient.gradient--ribbon {
-  background: #b50000;
-  background: -moz-radial-gradient(center, ellipse cover, #c43a2f 0%, #b50000 90%);
-  background: -webkit-radial-gradient(center, ellipse cover, #c43a2f 0%, #b50000 90%);
-  background: radial-gradient(ellipse at center, #c43a2f 0%, #b50000 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
-
-#background-abstracts.abstracts--ribbon #linear-gradient-1 stop {
-  stop-color: #cf9f09; }
-
-.gradient.gradient--ninjara {
-  background: #000036;
-  background: -moz-radial-gradient(center, ellipse cover, #0e4d91 0%, #000036 90%);
-  background: -webkit-radial-gradient(center, ellipse cover, #0e4d91 0%, #000036 90%);
-  background: radial-gradient(ellipse at center, #0e4d91 0%, #000036 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
-
-#background-abstracts.abstracts--ninjara #linear-gradient-1 stop {
-  stop-color: #118967; }
-
-.gradient.gradient--master {
-  background: #7d7d7d;
-  background: -moz-radial-gradient(center, ellipse cover, #f2f2f2 0%, #7d7d7d 90%);
-  background: -webkit-radial-gradient(center, ellipse cover, #f2f2f2 0%, #7d7d7d 90%);
-  background: radial-gradient(ellipse at center, #f2f2f2 0%, #7d7d7d 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
-
-#background-abstracts.abstracts--master #linear-gradient-1 stop {
-  stop-color: #69538b; }
-
-.gradient.gradient--min {
-  background: #16912e;
-  background: -moz-radial-gradient(center, ellipse cover, #85c52c 0%, #16912e 90%);
-  background: -webkit-radial-gradient(center, ellipse cover, #85c52c 0%, #16912e 90%);
-  background: radial-gradient(ellipse at center, #85c52c 0%, #16912e 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
-
-#background-abstracts.abstracts--min #linear-gradient-1 stop {
-  stop-color: #b76d1e; }
-
-.gradient.gradient--mech {
-  background: #ec841a;
-  background: -moz-radial-gradient(center, ellipse cover, #FFA20A 0%, #ec841a 90%);
-  background: -webkit-radial-gradient(center, ellipse cover, #FFA20A 0%, #ec841a 90%);
-  background: radial-gradient(ellipse at center, #FFA20A 0%, #ec841a 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
-
-#background-abstracts.abstracts--mech #linear-gradient-1 stop {
-  stop-color: #e1572d; }
-
-.gradient.gradient--helix {
-  background: #04593c;
-  background: -moz-radial-gradient(center, ellipse cover, #1AB593 0%, #04593c 90%);
-  background: -webkit-radial-gradient(center, ellipse cover, #1AB593 0%, #04593c 90%);
-  background: radial-gradient(ellipse at center, #1AB593 0%, #04593c 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 ); }
-
-#background-abstracts.abstracts--helix #linear-gradient-1 stop {
-  stop-color: #af3a8f; }
-
 #background-abstracts .abstracts {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 3; }
   #background-abstracts .abstracts.abstracts__lines {
     right: 0;
@@ -151,22 +167,18 @@
       #background-abstracts .abstracts.abstracts__lines svg path {
         fill: rgba(255, 255, 255, 0.5); }
   #background-abstracts .abstracts.abstracts__swirl {
-    right: 300px;
-    top: 54px;
-    left: 0;
+    top: -45vh;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    margin: 0 -50%;
     z-index: 2; }
     #background-abstracts .abstracts.abstracts__swirl svg {
       height: 100%; }
       #background-abstracts .abstracts.abstracts__swirl svg .swirl-1 {
-        fill: url(#linear-gradient-1); }
+        fill: url(#linear-gradient); }
       #background-abstracts .abstracts.abstracts__swirl svg .swirl-2 {
         fill: url(#linear-gradient-2); }
-      #background-abstracts .abstracts.abstracts__swirl svg .swirl-3 {
-        fill: url(#linear-gradient-3); }
-      #background-abstracts .abstracts.abstracts__swirl svg .swirl-4 {
-        fill: url(#linear-gradient-4); }
-      #background-abstracts .abstracts.abstracts__swirl svg .swirl-5 {
-        fill: url(#linear-gradient-5); }
 
 #chosen-fighter {
   position: relative;
@@ -175,40 +187,18 @@
   z-index: 4; }
   #chosen-fighter img.art {
     position: absolute;
-    top: -15%;
     left: -2000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     transition: .2s ease-in-out; }
     #chosen-fighter img.art.art--active {
-      left: 0;
+      top: 5%;
+      left: 10%;
       opacity: 1;
       animation: bob .7s ease-in-out infinite; }
-    #chosen-fighter img.art.spring {
-      top: -16px;
-      left: 54px;
-      width: 80vw; }
-    #chosen-fighter img.art.ribbon {
-      top: -16px;
-      left: 54px;
-      width: 80vw; }
-    #chosen-fighter img.art.ninjara {
-      top: -311px;
-      left: 170px;
-      width: 70vw; }
-    #chosen-fighter img.art.master {
-      top: -64px;
-      width: 100vw; }
-    #chosen-fighter img.art.min {
-      top: -16px;
-      left: 54px;
-      width: 80vw; }
-    #chosen-fighter img.art.mech {
-      top: -16px;
-      width: 90vw; }
-    #chosen-fighter img.art.helix {
-      top: 128px;
-      left: 54px;
-      width: 60vw; }
 
 #fighter-select {
   position: absolute;
@@ -231,7 +221,7 @@
       height: 2.4em;
       margin: 0.18em;
       font-size: 1em;
-      background-color: #feff01;
+      background-color: #fdfe0c;
       border: 2px solid #777;
       border-radius: 50%;
       transition: .05s ease-out; }
@@ -243,7 +233,7 @@
       #fighter-select .fighter__selection .avatar:hover {
         font-size: 1em;
         transform: scale(1.18, 1.18);
-        border: 2px solid #feff01;
+        border: 2px solid #fdfe0c;
         z-index: 2; }
         #fighter-select .fighter__selection .avatar:hover:before {
           content: '';
@@ -253,7 +243,7 @@
           width: .862em;
           height: .862em;
           font-size: 1em;
-          background-color: #feff01;
+          background-color: #fdfe0c;
           border-radius: 50%;
           animation: pulse .5s infinite ease-out;
           z-index: 2; }
@@ -358,7 +348,7 @@ h1.fighter__name {
         height: 26px;
         margin-right: 10px;
         border-radius: 50%;
-        background-color: #feff01;
+        background-color: #fdfe0c;
         color: black; }
 
 body {
@@ -384,7 +374,7 @@ ul {
   padding: 0;
   list-style: none; }
 
-.loader {
+#loading {
   position: absolute;
   top: 0;
   right: 0;
@@ -394,10 +384,17 @@ ul {
   align-items: center;
   justify-content: center;
   color: black;
-  background-color: pink;
-  z-index: 999;
-  opacity: .9; }
-  .loader.loaded {
+  background-color: #fdfe0c;
+  z-index: 999; }
+  #loading .loading__logo {
+    max-width: 690px;
+    width: 100%; }
+  #loading .loading__tag {
+    position: absolute;
+    bottom: 0;
+    right: 53px;
+    width: 300px; }
+  #loading.loading--hide {
     display: none; }
 
 /*# sourceMappingURL=default.css.map */

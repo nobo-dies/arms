@@ -6,55 +6,59 @@
     
     img.art {
         position: absolute;
-        top: -15%;
         left: -2000px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         opacity: 0;
         transition: .2s ease-in-out;
         
         &.art--active {
-            left: 0;
+            top: 5%;
+            left: 10%;
             opacity: 1;
             animation: bob .7s ease-in-out infinite;
         }   
         
-        &.spring {
-            top: -16px;
-            left: 54px;
-            width: 80vw;
-        }
-        
-        &.ribbon {
-            top: -16px;
-            left: 54px;
-            width: 80vw;
-        }
-        
-        &.ninjara {
-            top: -311px;
-            left: 170px;
-            width: 70vw;
-        }
-        
-        &.master {
-            top: -64px;
-            width: 100vw;
-        }
-        
-        &.min {
-            top: -16px;
-            left: 54px;
-            width: 80vw;
-        }
-        
-        &.mech {
-            top: -16px;
-            width: 90vw;
-        }
-        
-        &.helix {
-            top: 128px;
-            left: 54px;
-            width: 60vw;
-        }
+//        &.spring {
+//            top: -16px;
+//            left: 54px;
+//            width: 80vw;
+//        }
+//        
+//        &.ribbon {
+//            top: -16px;
+//            left: 54px;
+//            width: 80vw;
+//        }
+//        
+//        &.ninjara {
+//            top: -311px;
+//            left: 170px;
+//            width: 70vw;
+//        }
+//        
+//        &.master {
+//            top: -64px;
+//            width: 100vw;
+//        }
+//        
+//        &.min {
+//            top: -16px;
+//            left: 54px;
+//            width: 80vw;
+//        }
+//        
+//        &.mech {
+//            top: -16px;
+//            width: 90vw;
+//        }
+//        
+//        &.helix {
+//            top: 128px;
+//            left: 54px;
+//            width: 60vw;
+//        }
     }
 }
