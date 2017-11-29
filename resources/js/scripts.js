@@ -29,6 +29,14 @@ $(document).ready(function(){
             $("#background-abstracts").removeClass().addClass("abstracts--" + (art[index]));
         });
         
+        $(this).click(function () {
+            $(".abstracts__swirl").addClass("show");
+        });
+        
+        $(this).click(function () {
+            $(".abstracts__lines").addClass("show");
+        });
+        
         // Change Name
         $(this).click(function () {
             $(".fighter__name").text(arr[index]);

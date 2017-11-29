@@ -153,6 +153,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
   z-index: 3; }
   #background-abstracts .abstracts.abstracts__lines {
     right: 0;
@@ -161,7 +162,10 @@
     bottom: 0;
     margin: 0 auto;
     max-width: 1030px;
+    opacity: 0;
     z-index: 3; }
+    #background-abstracts .abstracts.abstracts__lines.show {
+      opacity: 1; }
     #background-abstracts .abstracts.abstracts__lines svg {
       height: 100%; }
       #background-abstracts .abstracts.abstracts__lines svg path {
@@ -173,6 +177,8 @@
     bottom: 0;
     margin: 0 -50%;
     z-index: 2; }
+    #background-abstracts .abstracts.abstracts__swirl.show {
+      opacity: 1; }
     #background-abstracts .abstracts.abstracts__swirl svg {
       height: 100%; }
       #background-abstracts .abstracts.abstracts__swirl svg .swirl-1 {
@@ -353,7 +359,7 @@ h1.fighter__name {
 
 body {
   font-family: 'Raleway', sans-serif;
-  background: black;
+  background: #fdfe0c;
   color: white;
   margin: 0;
   padding: 0; }
