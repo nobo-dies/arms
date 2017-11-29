@@ -1,144 +1,130 @@
 <!DOCTYPE html>
 <html>
-    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="An interactive getting started guide for Brackets.">
-
-        <title>Test</title>
-        
+        <title>ARMS</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:900|Cairo:900" rel="stylesheet">   
-        <link rel="stylesheet" href="css/styles.css">        
+        <link rel="stylesheet" href="css/default.css">        
         <script src="/js/jquery-3.2.1.min.js"></script>
     </head>
     <body>
-        
         <div id="loader" class="loader">
             <div id="status">Loading</div>
         </div>
-        
-        <main id="main-content" class="stage">
-            
-            <section class="arms">
-                <article class="arms__wrap arms--spring">
-                    <div class="arm-bg"><img src="/images/spring-arm-1.png"></div>
-                    <div class="arm-bg"><img src="/images/spring-arm-2.png"></div>
-                    <div class="arm-bg"><img src="/images/spring-arm-3.png"></div>
+        <main id="content">
+            <section id="arms">
+                <article id="spring-arms" class="glove">
+                    <div class="glove__bg"><img src="/images/gloves/spring-arm-1.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/spring-arm-2.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/spring-arm-3.png"></div>
                 </article>
-                <article class="arms__wrap arms--ribbon">
-                    <div class="arm-bg"><img src="/images/ribbon-arm-1.png"></div>
-                    <div class="arm-bg"><img src="/images/ribbon-arm-2.png"></div>
-                    <div class="arm-bg"><img src="/images/ribbon-arm-3.png"></div>
+                <article id="ribbon-arms" class="glove">
+                    <div class="glove__bg"><img src="/images/gloves/ribbon-arm-1.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/ribbon-arm-2.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/ribbon-arm-3.png"></div>
                 </article>
-                <article class="arms__wrap arms--ninja">
-                    <div class="arm-bg"><img src="/images/ninjara-arm-1.png"></div>
-                    <div class="arm-bg"><img src="/images/ninjara-arm-2.png"></div>
-                    <div class="arm-bg"><img src="/images/ninjara-arm-3.png"></div>
+                <article id="ninjara-arms" class="glove">
+                    <div class="glove__bg"><img src="/images/gloves/ninjara-arm-1.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/ninjara-arm-2.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/ninjara-arm-3.png"></div>
                 </article>
-                <article class="arms__wrap arms--master">
-                    <div class="arm-bg"><img src="/images/master-arm-1.png"></div>
-                    <div class="arm-bg"><img src="/images/master-arm-2.png"></div>
-                    <div class="arm-bg"><img src="/images/master-arm-3.png"></div>
+                <article id="master-arms" class="glove">
+                    <div class="glove__bg"><img src="/images/gloves/master-arm-1.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/master-arm-2.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/master-arm-3.png"></div>
                 </article>
-                <article class="arms__wrap arms--min">
-                    <div class="arm-bg"><img src="/images/min-arm-1.png"></div>
-                    <div class="arm-bg"><img src="/images/min-arm-2.png"></div>
-                    <div class="arm-bg"><img src="/images/min-arm-3.png"></div>
+                <article id="min-arms" class="glove">
+                    <div class="glove__bg"><img src="/images/gloves/min-arm-1.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/min-arm-2.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/min-arm-3.png"></div>
                 </article>
-                <article class="arms__wrap arms--mech">
-                    <div class="arm-bg"><img src="/images/min-arm-3.png"></div>
-                    <div class="arm-bg"><img src="/images/mech-arm-2.png"></div>
-                    <div class="arm-bg"><img src="/images/mech-arm-3.png"></div>
+                <article id="mech-arms" class="glove">
+                    <div class="glove__bg"><img src="/images/gloves/min-arm-3.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/mech-arm-2.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/mech-arm-3.png"></div>
                 </article>
-                <article class="arms__wrap arms--helix">
-                    <div class="arm-bg"><img src="/images/helix-arm-1.png"></div>
-                    <div class="arm-bg"><img src="/images/helix-arm-2.png"></div>
-                    <div class="arm-bg"><img src="/images/helix-arm-3.png"></div>
-                </article>
-            </section>
-            
-            <section id="bgShape" class="shapes">
-                <article class="shape-wrap shape-wrap--lines">
-                    <svg id="lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 766.34 633.68">
-                  <g>
-                    <path class="line-shape" d="M220.07,220L220,220Z" transform="translate(-219.69 -94.32)"/>
-                    <path class="line-shape" d="M607.67,598C682,544.33,850,390,728,235s-360.93-93-507.93-15c5.39-2.84,343.06-179.29,482.93,28C844,457,439,641,439,641s-73.47,35.51-201.11,87H395.49C532.77,653.68,607.67,598,607.67,598Z" transform="translate(-219.69 -94.32)"/>
-                    <path class="line-shape" d="M828.77,307.08S783.38,159.71,604,128.38s-384.36,88-384.36,88S428.35,99.86,601,139.27c0,0,123,20.4,178.33,131.07s-4,196.16-4,196.16-73.35,138-280,261.5h77.59C915.39,500.35,828.77,307.08,828.77,307.08Z" transform="translate(-219.69 -94.32)"/>
-                    <path class="line-shape" d="M856.45,242.09C690.5,32.5,407.16,103.36,222,209.8,251.75,193.92,638.33-20.33,835,260c127.47,181.69-53.48,364.16-192.69,468h84.12C824.58,643.28,1010,436,856.45,242.09Z" transform="translate(-219.69 -94.32)"/>
-                    <path class="line-shape" d="M973,339.5S911.43,143.65,691.5,104C422.5,55.5,222,205,222,205S399.5,89,616.5,104.5,920.5,295,920.5,295c62,140.5-3.07,259.62-3.07,259.62S882.07,629.47,791.52,728h71C1042,503,973,339.5,973,339.5Z" transform="translate(-219.69 -94.32)"/>
-                  </g>
-                </svg>
-                </article>
-                <article class="shape-wrap shape-wrap--swirl">
-                    <svg id="swirl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1046.13 726">
-                  <defs>
-                    <linearGradient id="linear-gradient" class="gradient-color" x1="816.09" y1="413.22" x2="834.08" y2="698.21" gradientUnits="userSpaceOnUse">
-                        <stop offset="0"/>
-                        <stop offset="1" stop-opacity="0"/>
-                    </linearGradient>
-                    <linearGradient id="linear-gradient-2" x1="460.86" y1="435.66" x2="478.86" y2="720.64" xlink:href="#linear-gradient"/>
-                    <linearGradient id="linear-gradient-3" x1="659.55" y1="423.11" x2="677.55" y2="708.09" xlink:href="#linear-gradient"/>
-                    <linearGradient id="linear-gradient-4" x1="736.9" y1="316.58" x2="412.85" y2="-163.5" xlink:href="#linear-gradient"/>
-                    <linearGradient id="linear-gradient-5" x1="429.84" y1="409.47" x2="186.85" y2="47.99" xlink:href="#linear-gradient"/>
-                  </defs>
-                  <g>
-                    <path class="cls-1" d="M1045,428s-7-114-73-207S805,96,805,96,740,67,606,74a384,384,0,0,0-39.72,4.15q8.05,21,17,41.52c37.49-1.27,75,1.91,106.74,13.33,111,40,139,122,139,122s38.16,73,13,174a190.93,190.93,0,0,1-18.62,46.54A1727,1727,0,0,0,993.8,635.13C1063.11,527.55,1045,428,1045,428Z" transform="translate(-1 -1)"/>
-                    <path class="cls-2" d="M475.41,104.65C423.8,127.31,396,154,396,154a788,788,0,0,1,92.67-23.21Q481.55,117.17,475.41,104.65Z" transform="translate(-1 -1)"/>
-                    <path class="cls-3" d="M654,620.24S517.4,683,371.7,727H911.2c29-24,51.88-48.74,70-73.33A1303,1303,0,0,1,793.82,517.53C736.68,583.83,654,620.24,654,620.24Z" transform="translate(-1 -1)"/>
-                  </g>
-                  <g>
-                    <path class="cls-4" d="M670.14,280.35q17.82,27.53,36.65,53.58c39.05-121-28.46-155.5-28.46-155.5s33,39.57-1.09,91.79Q673.8,275.51,670.14,280.35Z" transform="translate(-1 -1)"/>
-                    <path class="cls-5" d="M510,465.75c51-4,88-20.09,88-20.09,30.85-13.48,54.14-33.32,71.09-52.52-18.8-21.4-36.3-42.68-52.55-63.63a160.53,160.53,0,0,1-24.31,13S432.41,412.19,316.3,231.19C279.78,174.26,263.26,89.9,257.77,1H1V76.29C52.22,245,116.9,311.69,116.9,311.69s23.2,33.46,94.71,85.8C211.6,397.49,327.09,480.06,510,465.75Z" transform="translate(-1 -1)"/>
-                  </g>
-                </svg>
-                </article>
-            </section>
-            
-            <section class="entrance">
-                <img class="art spring" src="/images/SpringMan-low.png">
-                <img class="art ninja" src="/images/Ninjara-low.png">
-            </section>
-            
-            <section class="background">
-                <div class="bg spring"></div>
-                <div class="bg ribbon"></div>
-                <div class="bg ninja"></div>
-                <div class="bg master"></div>
-                <div class="bg min"></div>
-                <div class="bg mech"></div>
-                <div class="bg helix"></div>
-            </section>
-
-            <section class="selection">
-                <article class="fighter-name">
-                    <h1 class="fighter-name__h1"></h1>
-                </article>
-                <article>
-                    <ul class="fighter-selection">
-                        <li id="spring" class="fighter-avatar"><img src="/images/string-badge.png"></li>
-                        <li id="ribbon" class="fighter-avatar"><img src="/images/badge2.png"></li>
-                        <li id="ninja" class="fighter-avatar"><img src="/images/badge3.png"></li>
-                        <li id="master" class="fighter-avatar"><img src="/images/badge4.png"></li>
-                        <li id="min" class="fighter-avatar"><img src="/images/badge5.png"></li>
-                        <li id="mech" class="fighter-avatar"><img src="/images/badge6.png"></li>
-                        <li id="helix" class="fighter-avatar"><img src="/images/badge7.png"></li>
-                    </ul>
+                <article id="helix-arms" class="glove">
+                    <div class="glove__bg"><img src="/images/gloves/helix-arm-1.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/helix-arm-2.png"></div>
+                    <div class="glove__bg"><img src="/images/gloves/helix-arm-3.png"></div>
                 </article>
             </section>
 
-            <nav class="options">
-                <ul>
-                    <li class="options__btn -set">Set ARMS</li>
-                    <li class="options__btn -settings">Setting</li>
-                    <li class="options__btn -back">Back</li>
-                    <li class="options__btn -ok">OK</li>
+            <section id="chosen-fighter">
+                <img class="art spring" src="/images/fighters/SpringMan-low.png">
+                <img class="art ribbon" src="/images/fighters/RibbonGirl.png">
+                <img class="art ninjara" src="/images/fighters/Ninjara-low.png">
+                <img class="art master" src="/images/fighters/MasterMummy.png">
+                <img class="art min" src="/images/fighters/MinMin2.png">
+                <img class="art mech" src="/images/fighters/Mechanica.png">
+                <img class="art helix" src="/images/fighters/Helix.png">
+            </section>
+
+            <section id="fighter-select">
+                <h1 class="fighter__name"></h1>
+                <ul class="fighter__selection">
+                    <li id="spring" class="avatar"><img src="/images/badges/badge1.png"></li>
+                    <li id="ribbon" class="avatar"><img src="/images/badges/badge2.png"></li>
+                    <li id="ninjara" class="avatar"><img src="/images/badges/badge3.png"></li>
+                    <li id="master" class="avatar"><img src="/images/badges/badge4.png"></li>
+                    <li id="min" class="avatar"><img src="/images/badges/badge5.png"></li>
+                    <li id="mech" class="avatar"><img src="/images/badges/badge6.png"></li>
+                    <li id="helix" class="avatar"><img src="/images/badges/badge7.png"></li>
                 </ul>
-            </nav>
+            </section>
+
+            <section id="footer">
+                <ul class="options">
+                    <li class="options__button -set">Set ARMS</li>
+                    <li class="options__button -settings">Setting</li>
+                    <li class="options__button -back">Back</li>
+                    <li class="options__button -ok">OK</li>
+                </ul>
+            </section>
+            
+            <section id="background-abstracts">
+                <article class="abstracts abstracts__lines">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 766.34 633.68">
+                        <path d="M220.07,220L220,220Z" transform="translate(-219.69 -94.32)"/>
+                        <path d="M607.67,598C682,544.33,850,390,728,235s-360.93-93-507.93-15c5.39-2.84,343.06-179.29,482.93,28C844,457,439,641,439,641s-73.47,35.51-201.11,87H395.49C532.77,653.68,607.67,598,607.67,598Z" transform="translate(-219.69 -94.32)"/>
+                        <path d="M828.77,307.08S783.38,159.71,604,128.38s-384.36,88-384.36,88S428.35,99.86,601,139.27c0,0,123,20.4,178.33,131.07s-4,196.16-4,196.16-73.35,138-280,261.5h77.59C915.39,500.35,828.77,307.08,828.77,307.08Z" transform="translate(-219.69 -94.32)"/>
+                        <path d="M856.45,242.09C690.5,32.5,407.16,103.36,222,209.8,251.75,193.92,638.33-20.33,835,260c127.47,181.69-53.48,364.16-192.69,468h84.12C824.58,643.28,1010,436,856.45,242.09Z" transform="translate(-219.69 -94.32)"/>
+                        <path d="M973,339.5S911.43,143.65,691.5,104C422.5,55.5,222,205,222,205S399.5,89,616.5,104.5,920.5,295,920.5,295c62,140.5-3.07,259.62-3.07,259.62S882.07,629.47,791.52,728h71C1042,503,973,339.5,973,339.5Z" transform="translate(-219.69 -94.32)"/>
+                    </svg>
+                </article>
+                <article class="abstracts abstracts__swirl">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1046.13 726">
+                        <defs>
+                            <linearGradient id="linear-gradient-1" x1="816.09" y1="413.22" x2="834.08" y2="698.21" gradientUnits="userSpaceOnUse">
+                                <stop offset="0"/>
+                                <stop offset="1" stop-opacity="0"/>
+                            </linearGradient>
+                            <linearGradient id="linear-gradient-2" x1="460.86" y1="435.66" x2="478.86" y2="720.64" xlink:href="#linear-gradient"/>
+                            <linearGradient id="linear-gradient-3" x1="659.55" y1="423.11" x2="677.55" y2="708.09" xlink:href="#linear-gradient"/>
+                            <linearGradient id="linear-gradient-4" x1="736.9" y1="316.58" x2="412.85" y2="-163.5" xlink:href="#linear-gradient"/>
+                            <linearGradient id="linear-gradient-5" x1="429.84" y1="409.47" x2="186.85" y2="47.99" xlink:href="#linear-gradient"/>
+                        </defs>
+                        <path class="swirl-1" d="M1045,428s-7-114-73-207S805,96,805,96,740,67,606,74a384,384,0,0,0-39.72,4.15q8.05,21,17,41.52c37.49-1.27,75,1.91,106.74,13.33,111,40,139,122,139,122s38.16,73,13,174a190.93,190.93,0,0,1-18.62,46.54A1727,1727,0,0,0,993.8,635.13C1063.11,527.55,1045,428,1045,428Z" transform="translate(-1 -1)"/>
+                        <path class="swirl-2" d="M475.41,104.65C423.8,127.31,396,154,396,154a788,788,0,0,1,92.67-23.21Q481.55,117.17,475.41,104.65Z" transform="translate(-1 -1)"/>
+                        <path class="swirl-3" d="M654,620.24S517.4,683,371.7,727H911.2c29-24,51.88-48.74,70-73.33A1303,1303,0,0,1,793.82,517.53C736.68,583.83,654,620.24,654,620.24Z" transform="translate(-1 -1)"/>
+                        <path class="swirl-4" d="M670.14,280.35q17.82,27.53,36.65,53.58c39.05-121-28.46-155.5-28.46-155.5s33,39.57-1.09,91.79Q673.8,275.51,670.14,280.35Z" transform="translate(-1 -1)"/>
+                        <path class="swirl-5" d="M510,465.75c51-4,88-20.09,88-20.09,30.85-13.48,54.14-33.32,71.09-52.52-18.8-21.4-36.3-42.68-52.55-63.63a160.53,160.53,0,0,1-24.31,13S432.41,412.19,316.3,231.19C279.78,174.26,263.26,89.9,257.77,1H1V76.29C52.22,245,116.9,311.69,116.9,311.69s23.2,33.46,94.71,85.8C211.6,397.49,327.09,480.06,510,465.75Z" transform="translate(-1 -1)"/>
+                    </svg>
+                </article>
+            </section>
+            
+            <section id="background-gradient">
+                <div class="gradient gradient--spring"></div>
+                <div class="gradient gradient--ribbon"></div>
+                <div class="gradient gradient--ninjara"></div>
+                <div class="gradient gradient--master"></div>
+                <div class="gradient gradient--min"></div>
+                <div class="gradient gradient--mech"></div>
+                <div class="gradient gradient--helix"></div>
+            </section>
         </main>
-        
     </body>
-    
-    <script src="js/onclick.js"></script>
-<!--    <script src="js/hover.js"></script>-->
+    <script src="js/scripts.js"></script>
 </html>

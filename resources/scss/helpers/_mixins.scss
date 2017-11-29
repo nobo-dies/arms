@@ -1,0 +1,7 @@
+@mixin background-gradient($light-color, $dark-color) {
+    background: $dark-color;
+    background: -moz-radial-gradient(center, ellipse cover, $light-color 0%, $dark-color 90%);
+    background: -webkit-radial-gradient(center, ellipse cover, $light-color 0%,$dark-color 90%);
+    background: radial-gradient(ellipse at center, $light-color 0%,$dark-color 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$light-color', endColorstr='$dark-color',GradientType=1 );
+}

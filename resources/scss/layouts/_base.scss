@@ -1,0 +1,44 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: pink;
+    z-index: 999;
+    opacity: .9;
+    
+    &.loaded {
+        display: none;
+    }
+}

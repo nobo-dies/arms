@@ -1,0 +1,30 @@
+#arms {
+    .glove {
+        position: absolute;
+        top: 24px;
+        left: 48px;
+        z-index: 5;
+        opacity: 0;
+    }
+    
+    .glove--active {
+        opacity: 1;
+    }
+    
+    .glove__bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1em;
+        height: 1em;
+        margin: .1em;
+        font-size: 6em;
+        background-color: #f0f8ff40;
+        border-radius: .08em;
+        
+        img {
+            width: 110%;
+            transform: translateY(-9px);
+        }
+    }
+}

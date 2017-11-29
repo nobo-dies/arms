@@ -1,0 +1,25 @@
+// Animation
+
+@keyframes pulse {
+    0% { transform: scale(1,1); }
+    25% { transform: scale(1.05,1.05); }
+    50% { transform: scale(1.15,1.15); }
+    75% { transform: scale(1.05,1.05); }
+    100% { transform: scale(1,1); }
+}
+
+@keyframes img-flash {
+    0% { opacity: .1; }
+    100% { opacity: 1; }
+}
+
+@keyframes bob {
+    0% { transform: translateY(-.5em); }
+    50% { transform: translateY(.2em); }
+    100% { transform: translateY(-.5em); }
+}
+
+@keyframes figher-container-resize {
+    0% { transform: scale(1.22,1.22); }
+    100% { transform: scale(1,1); }
+}
