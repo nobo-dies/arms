@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background: $main-colour;
+    background: black;
     color: white;
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ ul {
     color: black;
     background-color: $main-colour;
     opacity: 1;
-    transition: .3s ease;
+    transition: .5s ease;
     z-index: 999;
     
     .loading__logo {
@@ -52,7 +52,8 @@ ul {
     }
     
     &.loading--hide {
-        left: -9999;
+        left: -9999px;
+        right: unset;
         opacity: 0;
     }
 }

@@ -359,7 +359,7 @@ h1.fighter__name {
 
 body {
   font-family: 'Raleway', sans-serif;
-  background: #fdfe0c;
+  background: black;
   color: white;
   margin: 0;
   padding: 0; }
@@ -392,7 +392,7 @@ ul {
   color: black;
   background-color: #fdfe0c;
   opacity: 1;
-  transition: .3s ease;
+  transition: .5s ease;
   z-index: 999; }
   #loading .loading__logo {
     max-width: 690px;
@@ -403,7 +403,8 @@ ul {
     right: 53px;
     width: 300px; }
   #loading.loading--hide {
-    left: -9999;
+    left: -9999px;
+    right: unset;
     opacity: 0; }
 
 /*# sourceMappingURL=default.css.map */
