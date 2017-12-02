@@ -6,8 +6,11 @@
         svg #linear-gradient stop {  
             stop-color: $swirl;
         }
-        .swirl-3 {
-            fill: $bg1;
+        svg #radial-gradient stop:first-child {
+            stop-color: $bg1;
+        }
+        svg #radial-gradient stop:last-child {
+            stop-color: $bg2;
         }
     }
 }
@@ -39,7 +42,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        opacity: 0;
         z-index: 3;
         
         &.abstracts__lines {
@@ -49,13 +51,8 @@
             bottom: 0;
             margin: 0 auto;
             max-width: 1030px;
-            opacity: 0;
             z-index: 3;
             
-            &.show {
-                opacity: 1;
-            }
-
             svg {
                 height: 100%;
 
@@ -73,10 +70,6 @@
             margin: 0 -50%;
             z-index: 2;
             
-            &.show {
-                opacity: 1;
-            }
-            
             svg {
                 height: 100%;
                 
@@ -86,6 +79,10 @@
 
                 .swirl-2 {
                     fill: url(#linear-gradient-2);
+                }
+
+                .swirl-3 {
+                    fill: url(#radial-gradient);
                 }
             }
         }

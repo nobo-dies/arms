@@ -11,6 +11,15 @@
         align-items: center;
         font-family: 'Montserrat', sans-serif;
         font-size: 2em;
+        cursor: pointer;
+
+        // @each $name, $bg1, $bg2, $swirl in $spring, $ribbon, $ninjara, $master, $min, $mech, $helix {
+        //     ##{$name} {
+        //         background-image: url(../../resources/images/avatars/avatar-#{$name}.png);
+        //         background-size: 115%;
+        //         background-position: center;
+        //     }
+        // }
         
         .avatar {
             position: relative;
@@ -19,99 +28,98 @@
             justify-content: center;
             width: 2.4em;
             height: 2.4em;
-            margin: 0.18em;
+            margin: 0.28em;
             font-size: 1em;
-            background-color: $main-colour;
-            border: 2px solid #777;
+            background-color: $avatar-border;
             border-radius: 50%;
             transition: .05s ease-out;
             
             img {
-                width: 2.38em;
-                height: 2.38em;
-                font-size: 1em;
+                transform: scale3d(1,1,1);
+                width: 100%;
+                height: 100%;
                 border-radius: 50%;
+                border: 2px solid $avatar-border;
             }
                         
             &:hover {
-                font-size: 1em;
-                transform: scale(1.18,1.18);
-                border: 2px solid $main-colour;
+                transform: scale3d(1.18,1.18,1.18);
+                background-color: $main-colour;
                 z-index: 2;
                 
-                &:before {
-                    content: '';
-                    position: absolute;
-                    top: -.2em;
-                    left: 0;
-                    width: .862em;
-                    height: .862em;
-                    font-size: 1em;
-                    background-color: $main-colour;
-                    border-radius: 50%;
-                    animation: pulse .5s infinite ease-out;
-                    z-index: 2;
+                .avatar__hover {
+                    opacity: 1;
                 }
-                
-                &:after {
-                    content: '1';
-                    position: absolute;
-                    left: .5em;
-                    align-self: flex-start;
-                    line-height: .87em;
-                    color: black;
-                    font-size: 0.6em;
-                    text-align: center;
-                    z-index: 2;
+
+                img {
+                    border: 4px solid $main-colour;
                 }
             }
+
+            .avatar__hover {
+                position: absolute;
+                top: -.2em;
+                left: .06em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 1em;
+                height: 1em;
+                font-size: 1.08em;
+                border-radius: 50%;
+                z-index: 2;
+                opacity: 0;
+            }
+
+            .avatar__number {
+                position: absolute;
+                color: black;
+                font-size: 0.7em;
+                text-align: center;
+                z-index: 2;
+
+                &:before {
+                    content: '1';
+                }
+            }
+
+            .avatar__pulse-bg {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: $main-colour;
+                animation: pulse .5s infinite ease-in;
+            }
             
-            &.fighter__avatar--active {
-                animation: figher-container-resize .1s ease-out;
+            &.avatar--active {
+                transform: scale3d(1,1,1);
+                cursor: default;
                 
                 img {
                     animation: img-flash .2s ease-out;
                 }
-                
-                &:before {
-                    content: '';
-                    position: absolute;
-                    top: -.2em;
-                    left: 0;
-                    width: 1em;
-                    height: 1em;
-                    font-size: .75em;
-                    background-color: #999;
-                    border-radius: 50%;
-                    z-index: 2;
+
+                .avatar__hover {
+                    top: -.3em;
+                    font-size: .84em;
+                    opacity: 1;
                 }
-                
-                &:after {
-                    content: '1';
-                    position: absolute;
-                    left: .5em;
-                    align-self: flex-start;
-                    line-height: .9em;
-                    color: black;
-                    font-size: 0.5em;
-                    text-align: center;
-                    z-index: 2;
+    
+                .avatar__number {
+                    font-size: 0.68em;
+                }
+    
+                .avatar__pulse-bg {
+                    animation: unset;
+                    background-color: lighten( $avatar-border, 14% );
                 }
                 
                 &:hover {
-                    transform: scale(1,1);
-                    border: 2px solid #777;
-                    
-                    &:before {
-                        font-size: .75em;
-                        background-color: #999;
-                        animation: unset;
-                    }
-                    
-                    &:after {
-                        left: .51em;
-                        line-height: .9em;
-                        font-size: 0.5em;
+                    transform: scale3d(1,1,1);
+                    background-color: $avatar-border;
+
+                    img {
+                        border: 2px solid $avatar-border;
                     }
                 }
             }
@@ -121,10 +129,10 @@
 
 h1.fighter__name {
     position: absolute;
-    bottom: 80px;
+    bottom: 88px;
     margin: 0 auto;
     z-index: 4;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 32px;

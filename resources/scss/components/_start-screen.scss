@@ -1,0 +1,122 @@
+#start {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 9;
+    
+    .start-button {
+        display: flex;
+        align-items: center;
+        
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.2em;
+        font-weight: 700;
+        letter-spacing: .02em;
+        text-transform: uppercase;
+        
+        margin-bottom: 32px;        
+        color: $main-colour;
+        
+        .trigger {
+            font-size: .55em;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            background-color: $main-colour;
+            border-radius: 2px;
+            padding: 1px 9px;
+            margin: 0 10px;
+            color: black;
+            
+            &:first-child {
+                margin-left: 14px;
+                border-top-left-radius: 10px;
+            }
+            
+            &:last-child {
+                border-top-right-radius: 10px;
+            }
+        }
+        
+        .cross {
+            font-family: "Arial", "Helvetica", sans-serif;
+            font-size: .8em;
+            font-weight: 800;
+        }
+    }
+    
+    #go {
+        position: absolute;
+        bottom: 100px;
+        width: 1em;
+        height: auto;
+        display: block;
+        z-index: 10;
+        font-size: 15em;
+        fill: $main-colour;
+        transition: .2s;
+        animation: fade-colour 2s 2s ease-in-out infinite alternate;
+        cursor: pointer;
+        
+        &.down-pulse {
+            animation: down-pulse .2s;
+        }
+    }
+    
+    .start-art {
+        margin-top: 0;
+        width: 75vw;
+        z-index: 9;
+    }
+    
+    .start-logo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        position: absolute;
+        top: -5px;
+        bottom: 0;
+        left: 40px;
+        right: 0;
+        z-index: 8;
+        
+        
+        svg {
+            width: 115vw;
+            height: auto;
+            fill: $main-colour;
+            position: absolute;
+            top: -10px;
+        }
+    }
+}
+
+.start-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(/resources/images/spring-stadium.jpg);
+    z-index: 7;
+    animation: zoom 30s linear infinite;
+}
+
+@keyframes fade-colour {
+    0% { fill: $main-colour; }
+    25% { fill: $main-colour; }
+    50% { fill: black; }
+    75% { fill: $main-colour; }
+    100% { fill: $main-colour; }
+}

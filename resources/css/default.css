@@ -9,6 +9,13 @@
     transform: scale(1.05, 1.05); }
   100% {
     transform: scale(1, 1); } }
+@keyframes down-pulse {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.9, 0.9); }
+  100% {
+    transform: scale(1, 1); } }
 @keyframes img-flash {
   0% {
     opacity: .1; }
@@ -26,6 +33,106 @@
     transform: scale(1.22, 1.22); }
   100% {
     transform: scale(1, 1); } }
+#start {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 9; }
+  #start .start-button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color: #fdfe0c; }
+    #start .start-button .trigger {
+      font-size: .55em;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      background-color: #fdfe0c;
+      border-radius: 2px;
+      padding: 1px 9px;
+      margin: 0 10px;
+      color: black; }
+      #start .start-button .trigger:first-child {
+        margin-left: 14px;
+        border-top-left-radius: 10px; }
+      #start .start-button .trigger:last-child {
+        border-top-right-radius: 10px; }
+    #start .start-button .cross {
+      font-family: "Arial", "Helvetica", sans-serif;
+      font-size: .8em;
+      font-weight: 800; }
+  #start #go {
+    position: absolute;
+    bottom: 100px;
+    width: 1em;
+    height: auto;
+    display: block;
+    z-index: 10;
+    font-size: 15em;
+    fill: #fdfe0c;
+    transition: .2s;
+    animation: fade-colour 2s 2s ease-in-out infinite alternate;
+    cursor: pointer; }
+    #start #go.down-pulse {
+      animation: down-pulse .2s; }
+  #start .start-art {
+    margin-top: 0;
+    width: 75vw;
+    z-index: 9; }
+  #start .start-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    z-index: 8; }
+    #start .start-logo svg {
+      width: 115vw;
+      height: auto;
+      fill: #fdfe0c;
+      position: absolute;
+      top: -10px; }
+
+.start-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/resources/images/spring-stadium.jpg);
+  z-index: 7;
+  animation: zoom 30s linear infinite; }
+
+@keyframes fade-colour {
+  0% {
+    fill: #fdfe0c; }
+  25% {
+    fill: #fdfe0c; }
+  50% {
+    fill: black; }
+  75% {
+    fill: #fdfe0c; }
+  100% {
+    fill: #fdfe0c; } }
 #arms .glove {
   position: absolute;
   top: 24px;
@@ -41,7 +148,7 @@
   width: 1em;
   height: 1em;
   margin: .1em;
-  font-size: 6em;
+  font-size: 5.4em;
   background-color: #f0f8ff40;
   border-radius: .08em; }
   #arms .glove__bg img {
@@ -57,8 +164,10 @@
 
 #background-abstracts.abstracts--spring svg #linear-gradient stop {
   stop-color: #a22e89; }
-#background-abstracts.abstracts--spring .swirl-3 {
-  fill: #097db7; }
+#background-abstracts.abstracts--spring svg #radial-gradient stop:first-child {
+  stop-color: #097db7; }
+#background-abstracts.abstracts--spring svg #radial-gradient stop:last-child {
+  stop-color: #0558a9; }
 
 .gradient.gradient--ribbon {
   background: #b50000;
@@ -69,8 +178,10 @@
 
 #background-abstracts.abstracts--ribbon svg #linear-gradient stop {
   stop-color: #cf9f09; }
-#background-abstracts.abstracts--ribbon .swirl-3 {
-  fill: #c43a2f; }
+#background-abstracts.abstracts--ribbon svg #radial-gradient stop:first-child {
+  stop-color: #c43a2f; }
+#background-abstracts.abstracts--ribbon svg #radial-gradient stop:last-child {
+  stop-color: #b50000; }
 
 .gradient.gradient--ninjara {
   background: #000036;
@@ -81,8 +192,10 @@
 
 #background-abstracts.abstracts--ninjara svg #linear-gradient stop {
   stop-color: #118967; }
-#background-abstracts.abstracts--ninjara .swirl-3 {
-  fill: #0e4d91; }
+#background-abstracts.abstracts--ninjara svg #radial-gradient stop:first-child {
+  stop-color: #0e4d91; }
+#background-abstracts.abstracts--ninjara svg #radial-gradient stop:last-child {
+  stop-color: #000036; }
 
 .gradient.gradient--master {
   background: #7d7d7d;
@@ -93,8 +206,10 @@
 
 #background-abstracts.abstracts--master svg #linear-gradient stop {
   stop-color: #69538b; }
-#background-abstracts.abstracts--master .swirl-3 {
-  fill: #f2f2f2; }
+#background-abstracts.abstracts--master svg #radial-gradient stop:first-child {
+  stop-color: #f2f2f2; }
+#background-abstracts.abstracts--master svg #radial-gradient stop:last-child {
+  stop-color: #7d7d7d; }
 
 .gradient.gradient--min {
   background: #16912e;
@@ -105,8 +220,10 @@
 
 #background-abstracts.abstracts--min svg #linear-gradient stop {
   stop-color: #b76d1e; }
-#background-abstracts.abstracts--min .swirl-3 {
-  fill: #85c52c; }
+#background-abstracts.abstracts--min svg #radial-gradient stop:first-child {
+  stop-color: #85c52c; }
+#background-abstracts.abstracts--min svg #radial-gradient stop:last-child {
+  stop-color: #16912e; }
 
 .gradient.gradient--mech {
   background: #ec841a;
@@ -117,8 +234,10 @@
 
 #background-abstracts.abstracts--mech svg #linear-gradient stop {
   stop-color: #e1572d; }
-#background-abstracts.abstracts--mech .swirl-3 {
-  fill: #FFA20A; }
+#background-abstracts.abstracts--mech svg #radial-gradient stop:first-child {
+  stop-color: #FFA20A; }
+#background-abstracts.abstracts--mech svg #radial-gradient stop:last-child {
+  stop-color: #ec841a; }
 
 .gradient.gradient--helix {
   background: #04593c;
@@ -129,8 +248,10 @@
 
 #background-abstracts.abstracts--helix svg #linear-gradient stop {
   stop-color: #af3a8f; }
-#background-abstracts.abstracts--helix .swirl-3 {
-  fill: #1AB593; }
+#background-abstracts.abstracts--helix svg #radial-gradient stop:first-child {
+  stop-color: #1AB593; }
+#background-abstracts.abstracts--helix svg #radial-gradient stop:last-child {
+  stop-color: #04593c; }
 
 #background-gradient {
   position: absolute;
@@ -153,7 +274,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
   z-index: 3; }
   #background-abstracts .abstracts.abstracts__lines {
     right: 0;
@@ -162,10 +282,7 @@
     bottom: 0;
     margin: 0 auto;
     max-width: 1030px;
-    opacity: 0;
     z-index: 3; }
-    #background-abstracts .abstracts.abstracts__lines.show {
-      opacity: 1; }
     #background-abstracts .abstracts.abstracts__lines svg {
       height: 100%; }
       #background-abstracts .abstracts.abstracts__lines svg path {
@@ -177,14 +294,14 @@
     bottom: 0;
     margin: 0 -50%;
     z-index: 2; }
-    #background-abstracts .abstracts.abstracts__swirl.show {
-      opacity: 1; }
     #background-abstracts .abstracts.abstracts__swirl svg {
       height: 100%; }
       #background-abstracts .abstracts.abstracts__swirl svg .swirl-1 {
         fill: url(#linear-gradient); }
       #background-abstracts .abstracts.abstracts__swirl svg .swirl-2 {
         fill: url(#linear-gradient-2); }
+      #background-abstracts .abstracts.abstracts__swirl svg .swirl-3 {
+        fill: url(#radial-gradient); }
 
 #chosen-fighter {
   position: relative;
@@ -193,8 +310,9 @@
   z-index: 4; }
   #chosen-fighter img.art {
     position: absolute;
-    left: -2000px;
-    height: 100%;
+    top: 5%;
+    left: -100vw;
+    height: 110%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,9 +320,22 @@
     transition: .2s ease-in-out; }
     #chosen-fighter img.art.art--active {
       top: 5%;
-      left: 10%;
+      left: 7vw;
       opacity: 1;
       animation: bob .7s ease-in-out infinite; }
+      #chosen-fighter img.art.art--active.spring {
+        left: 4vw; }
+      #chosen-fighter img.art.art--active.ninjara {
+        top: -5%;
+        left: 12vw; }
+    #chosen-fighter img.art.spring {
+      left: -104vw;
+      height: 100%; }
+    #chosen-fighter img.art.ribbon {
+      height: 100%; }
+    #chosen-fighter img.art.ninjara {
+      top: -5%;
+      left: -112vw; }
 
 #fighter-select {
   position: absolute;
@@ -217,7 +348,8 @@
     display: flex;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em; }
+    font-size: 2em;
+    cursor: pointer; }
     #fighter-select .fighter__selection .avatar {
       position: relative;
       display: flex;
@@ -225,87 +357,78 @@
       justify-content: center;
       width: 2.4em;
       height: 2.4em;
-      margin: 0.18em;
+      margin: 0.28em;
       font-size: 1em;
-      background-color: #fdfe0c;
-      border: 2px solid #777;
+      background-color: #898f9d;
       border-radius: 50%;
       transition: .05s ease-out; }
       #fighter-select .fighter__selection .avatar img {
-        width: 2.38em;
-        height: 2.38em;
-        font-size: 1em;
-        border-radius: 50%; }
+        transform: scale3d(1, 1, 1);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid #898f9d; }
       #fighter-select .fighter__selection .avatar:hover {
-        font-size: 1em;
-        transform: scale(1.18, 1.18);
-        border: 2px solid #fdfe0c;
+        transform: scale3d(1.18, 1.18, 1.18);
+        background-color: #fdfe0c;
         z-index: 2; }
-        #fighter-select .fighter__selection .avatar:hover:before {
-          content: '';
-          position: absolute;
-          top: -.2em;
-          left: 0;
-          width: .862em;
-          height: .862em;
-          font-size: 1em;
-          background-color: #fdfe0c;
-          border-radius: 50%;
-          animation: pulse .5s infinite ease-out;
-          z-index: 2; }
-        #fighter-select .fighter__selection .avatar:hover:after {
-          content: '1';
-          position: absolute;
-          left: .5em;
-          align-self: flex-start;
-          line-height: .87em;
-          color: black;
-          font-size: 0.6em;
-          text-align: center;
-          z-index: 2; }
-      #fighter-select .fighter__selection .avatar.fighter__avatar--active {
-        animation: figher-container-resize .1s ease-out; }
-        #fighter-select .fighter__selection .avatar.fighter__avatar--active img {
+        #fighter-select .fighter__selection .avatar:hover .avatar__hover {
+          opacity: 1; }
+        #fighter-select .fighter__selection .avatar:hover img {
+          border: 4px solid #fdfe0c; }
+      #fighter-select .fighter__selection .avatar .avatar__hover {
+        position: absolute;
+        top: -.2em;
+        left: .06em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1em;
+        height: 1em;
+        font-size: 1.08em;
+        border-radius: 50%;
+        z-index: 2;
+        opacity: 0; }
+      #fighter-select .fighter__selection .avatar .avatar__number {
+        position: absolute;
+        color: black;
+        font-size: 0.7em;
+        text-align: center;
+        z-index: 2; }
+        #fighter-select .fighter__selection .avatar .avatar__number:before {
+          content: '1'; }
+      #fighter-select .fighter__selection .avatar .avatar__pulse-bg {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #fdfe0c;
+        animation: pulse .5s infinite ease-in; }
+      #fighter-select .fighter__selection .avatar.avatar--active {
+        transform: scale3d(1, 1, 1);
+        cursor: default; }
+        #fighter-select .fighter__selection .avatar.avatar--active img {
           animation: img-flash .2s ease-out; }
-        #fighter-select .fighter__selection .avatar.fighter__avatar--active:before {
-          content: '';
-          position: absolute;
-          top: -.2em;
-          left: 0;
-          width: 1em;
-          height: 1em;
-          font-size: .75em;
-          background-color: #999;
-          border-radius: 50%;
-          z-index: 2; }
-        #fighter-select .fighter__selection .avatar.fighter__avatar--active:after {
-          content: '1';
-          position: absolute;
-          left: .5em;
-          align-self: flex-start;
-          line-height: .9em;
-          color: black;
-          font-size: 0.5em;
-          text-align: center;
-          z-index: 2; }
-        #fighter-select .fighter__selection .avatar.fighter__avatar--active:hover {
-          transform: scale(1, 1);
-          border: 2px solid #777; }
-          #fighter-select .fighter__selection .avatar.fighter__avatar--active:hover:before {
-            font-size: .75em;
-            background-color: #999;
-            animation: unset; }
-          #fighter-select .fighter__selection .avatar.fighter__avatar--active:hover:after {
-            left: .51em;
-            line-height: .9em;
-            font-size: 0.5em; }
+        #fighter-select .fighter__selection .avatar.avatar--active .avatar__hover {
+          top: -.3em;
+          font-size: .84em;
+          opacity: 1; }
+        #fighter-select .fighter__selection .avatar.avatar--active .avatar__number {
+          font-size: 0.68em; }
+        #fighter-select .fighter__selection .avatar.avatar--active .avatar__pulse-bg {
+          animation: unset;
+          background-color: #b0b4bd; }
+        #fighter-select .fighter__selection .avatar.avatar--active:hover {
+          transform: scale3d(1, 1, 1);
+          background-color: #898f9d; }
+          #fighter-select .fighter__selection .avatar.avatar--active:hover img {
+            border: 2px solid #898f9d; }
 
 h1.fighter__name {
   position: absolute;
-  bottom: 80px;
+  bottom: 88px;
   margin: 0 auto;
   z-index: 4;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -362,18 +485,20 @@ body {
   background: black;
   color: white;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 #content {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 200vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
 
 ul {
   margin: 0;
@@ -389,22 +514,77 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   color: black;
-  background-color: #fdfe0c;
   opacity: 1;
-  transition: .5s ease;
   z-index: 999; }
-  #loading .loading__logo {
-    max-width: 690px;
-    width: 100%; }
-  #loading .loading__tag {
-    position: absolute;
-    bottom: 0;
-    right: 53px;
-    width: 300px; }
   #loading.loading--hide {
-    left: -9999px;
-    right: unset;
-    opacity: 0; }
+    display: none !important; }
+
+.loading__logo {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3; }
+
+.loading__tag {
+  position: absolute;
+  bottom: 0;
+  right: 53px;
+  width: 200px;
+  animation: slide-down 2s 2s ease-out forwards; }
+
+.loading__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 160%;
+  background-color: #fdfe0c;
+  background: -moz-linear-gradient(left, #fdfe0c 85%, rgba(253, 254, 12, 0) 100%);
+  background: -webkit-linear-gradient(left, #fdfe0c 85%, rgba(253, 254, 12, 0) 100%);
+  background: linear-gradient(to right, #fdfe0c 85%, rgba(253, 254, 12, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfe0c', endColorstr='#00fdfe0c',GradientType=1 );
+  opacity: 1;
+  animation: slide-left 1s 2.3s ease-out forwards;
+  z-index: -1; }
+
+#blank {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100vw;
+  width: 100%;
+  background-color: black;
+  z-index: 10; }
+
+@keyframes slide-down {
+  0% {
+    bottom: 0; }
+  100% {
+    bottom: -100vw; } }
+@keyframes slide-left {
+  0% {
+    right: 0; }
+  100% {
+    right: 200vw; } }
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    width: 100%; }
+  100% {
+    opacity: 0;
+    width: 0; } }
+@keyframes zoom {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=default.css.map */

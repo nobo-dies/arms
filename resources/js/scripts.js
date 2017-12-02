@@ -1,12 +1,29 @@
 var arr = ["Spring Man", "Ribbon Girl", "Ninjara", "Master Mummy", "Min Min", "Machanica", "Helix"];
 var art = ["spring", "ribbon", "ninjara", "master", "min", "mech", "helix"];
 var num = ["1", "2", "3", "4", "5", "6", "7"];
+var clickaudio = "../resources/sound/click.mp3";
 
 $(window).on("load", function() {
-    $("#loading").addClass("loading--hide");
+    setTimeout(function(){
+        $("#loading").addClass("loading--hide");
+    }, 2500);
 });
 
 $(document).ready(function(){
+
+    $("#go").click(function () {
+        $(this).addClass("down-pulse"), new Audio(clickaudio).play();
+        $("#content").delay(200).animate({ left: '0' }, 200 );
+        $("#start").delay(200).animate({ opacity: '0'});
+        $(this).removeClass("down-pulse");
+    });
+    
+    $("#back").click(function () {
+        $("#blank").animate({ left: '-200vw' }, 100 );
+        $("#content").delay(400).animate({ left: '100vw' }, "slow" );
+        $("#start").delay(400).animate({ opacity: '1'});
+    });
+    
     $(".avatar").each(function (index) {
         
         // Glove Change
@@ -29,14 +46,6 @@ $(document).ready(function(){
             $("#background-abstracts").removeClass().addClass("abstracts--" + (art[index]));
         });
         
-        $(this).click(function () {
-            $(".abstracts__swirl").addClass("show");
-        });
-        
-        $(this).click(function () {
-            $(".abstracts__lines").addClass("show");
-        });
-        
         // Change Name
         $(this).click(function () {
             $(".fighter__name").text(arr[index]);
@@ -45,6 +54,10 @@ $(document).ready(function(){
         // Active
         $(this).click(function (e) {
             $(this).addClass("avatar--active").siblings().removeClass("avatar--active");
+        });
+        
+        $(this).click(function() {
+            new Audio(clickaudio).play();
         });
     });
 });

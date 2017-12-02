@@ -4,18 +4,20 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #content {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 200vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    z-index: 10;
 }
 
 ul {
@@ -33,27 +35,80 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     color: black;
-    background-color: $main-colour;
     opacity: 1;
-    transition: .5s ease;
     z-index: 999;
     
-    .loading__logo {
-        max-width: 690px;
-        width: 100%;
-    }
-    
-    .loading__tag {
-        position: absolute;
-        bottom: 0;
-        right: 53px;
-        width: 300px;
-    }
-    
     &.loading--hide {
-        left: -9999px;
-        right: unset;
-        opacity: 0;
+        display: none !important;
     }
 }
+
+.loading__logo {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.loading__tag {
+    position: absolute;
+    bottom: 0;
+    right: 53px;
+    width: 200px;
+    animation: slide-down 2s 2s ease-out forwards;
+}
+
+.loading__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 160%;
+    background-color: $main-colour;
+    background: -moz-linear-gradient(left, $main-colour 85%,rgba($main-colour,0) 100%);
+    background: -webkit-linear-gradient(left, $main-colour 85%,rgba($main-colour,0) 100%);
+    background: linear-gradient(to right, $main-colour 85%,rgba($main-colour,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfe0c', endColorstr='#00fdfe0c',GradientType=1 );
+    opacity: 1;
+    animation: slide-left 1s 2.3s ease-out forwards;
+    z-index: -1;
+}
+
+#blank {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100vw;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+
+@keyframes slide-down {
+    0% { bottom: 0;  }
+    100% { bottom: -100vw; }
+}
+
+@keyframes slide-left {
+    0% { right: 0;  }
+    100% { right: 200vw; }
+}
+
+@keyframes fade-out {
+    0% { opacity: 1; width: 100%;  }
+    100% { opacity: 0; width: 0; }
+}
+
+@keyframes zoom {
+    0% { transform: scale(1)}
+    50% { transform: scale(1.05)}
+    100% { transform: scale(1)}
+}
+
+
