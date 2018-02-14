@@ -91,7 +91,6 @@
         right: 0;
         z-index: 8;
         
-        
         svg {
             width: 115vw;
             height: auto;
@@ -108,7 +107,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(/resources/images/spring-stadium.jpg);
+    background-image: url(../images/spring-stadium.jpg);
     z-index: 7;
     animation: zoom 30s linear infinite;
 }

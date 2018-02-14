@@ -9,6 +9,7 @@
     transform: scale(1.05, 1.05); }
   100% {
     transform: scale(1, 1); } }
+
 @keyframes down-pulse {
   0% {
     transform: scale(1, 1); }
@@ -16,11 +17,13 @@
     transform: scale(0.9, 0.9); }
   100% {
     transform: scale(1, 1); } }
+
 @keyframes img-flash {
   0% {
     opacity: .1; }
   100% {
     opacity: 1; } }
+
 @keyframes bob {
   0% {
     transform: translateY(-0.5em); }
@@ -28,11 +31,13 @@
     transform: translateY(0.2em); }
   100% {
     transform: translateY(-0.5em); } }
+
 @keyframes figher-container-resize {
   0% {
     transform: scale(1.22, 1.22); }
   100% {
     transform: scale(1, 1); } }
+
 #start {
   position: absolute;
   top: 0;
@@ -118,7 +123,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(/resources/images/spring-stadium.jpg);
+  background-image: url(../images/spring-stadium.jpg);
   z-index: 7;
   animation: zoom 30s linear infinite; }
 
@@ -133,14 +138,17 @@
     fill: #fdfe0c; }
   100% {
     fill: #fdfe0c; } }
+
 #arms .glove {
   position: absolute;
   top: 24px;
   left: 48px;
   z-index: 5;
   opacity: 0; }
+
 #arms .glove--active {
   opacity: 1; }
+
 #arms .glove__bg {
   display: flex;
   align-items: center;
@@ -164,8 +172,10 @@
 
 #background-abstracts.abstracts--spring svg #linear-gradient stop {
   stop-color: #a22e89; }
+
 #background-abstracts.abstracts--spring svg #radial-gradient stop:first-child {
   stop-color: #097db7; }
+
 #background-abstracts.abstracts--spring svg #radial-gradient stop:last-child {
   stop-color: #0558a9; }
 
@@ -178,8 +188,10 @@
 
 #background-abstracts.abstracts--ribbon svg #linear-gradient stop {
   stop-color: #cf9f09; }
+
 #background-abstracts.abstracts--ribbon svg #radial-gradient stop:first-child {
   stop-color: #c43a2f; }
+
 #background-abstracts.abstracts--ribbon svg #radial-gradient stop:last-child {
   stop-color: #b50000; }
 
@@ -192,8 +204,10 @@
 
 #background-abstracts.abstracts--ninjara svg #linear-gradient stop {
   stop-color: #118967; }
+
 #background-abstracts.abstracts--ninjara svg #radial-gradient stop:first-child {
   stop-color: #0e4d91; }
+
 #background-abstracts.abstracts--ninjara svg #radial-gradient stop:last-child {
   stop-color: #000036; }
 
@@ -206,8 +220,10 @@
 
 #background-abstracts.abstracts--master svg #linear-gradient stop {
   stop-color: #69538b; }
+
 #background-abstracts.abstracts--master svg #radial-gradient stop:first-child {
   stop-color: #f2f2f2; }
+
 #background-abstracts.abstracts--master svg #radial-gradient stop:last-child {
   stop-color: #7d7d7d; }
 
@@ -220,8 +236,10 @@
 
 #background-abstracts.abstracts--min svg #linear-gradient stop {
   stop-color: #b76d1e; }
+
 #background-abstracts.abstracts--min svg #radial-gradient stop:first-child {
   stop-color: #85c52c; }
+
 #background-abstracts.abstracts--min svg #radial-gradient stop:last-child {
   stop-color: #16912e; }
 
@@ -234,8 +252,10 @@
 
 #background-abstracts.abstracts--mech svg #linear-gradient stop {
   stop-color: #e1572d; }
+
 #background-abstracts.abstracts--mech svg #radial-gradient stop:first-child {
   stop-color: #FFA20A; }
+
 #background-abstracts.abstracts--mech svg #radial-gradient stop:last-child {
   stop-color: #ec841a; }
 
@@ -248,8 +268,10 @@
 
 #background-abstracts.abstracts--helix svg #linear-gradient stop {
   stop-color: #af3a8f; }
+
 #background-abstracts.abstracts--helix svg #radial-gradient stop:first-child {
   stop-color: #1AB593; }
+
 #background-abstracts.abstracts--helix svg #radial-gradient stop:last-child {
   stop-color: #04593c; }
 
@@ -530,7 +552,11 @@ ul {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 3; }
+  opacity: 1;
+  z-index: 3;
+  transition: all 500ms ease; }
+  .loading__logo.logo-hide {
+    opacity: 0; }
 
 .loading__tag {
   position: absolute;
@@ -567,11 +593,13 @@ ul {
     bottom: 0; }
   100% {
     bottom: -100vw; } }
+
 @keyframes slide-left {
   0% {
     right: 0; }
   100% {
     right: 200vw; } }
+
 @keyframes fade-out {
   0% {
     opacity: 1;
@@ -579,6 +607,7 @@ ul {
   100% {
     opacity: 0;
     width: 0; } }
+
 @keyframes zoom {
   0% {
     transform: scale(1); }
@@ -586,5 +615,3 @@ ul {
     transform: scale(1.05); }
   100% {
     transform: scale(1); } }
-
-/*# sourceMappingURL=default.css.map */

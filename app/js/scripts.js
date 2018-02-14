@@ -1,12 +1,15 @@
 var arr = ["Spring Man", "Ribbon Girl", "Ninjara", "Master Mummy", "Min Min", "Machanica", "Helix"];
 var art = ["spring", "ribbon", "ninjara", "master", "min", "mech", "helix"];
 var num = ["1", "2", "3", "4", "5", "6", "7"];
-var clickaudio = "../resources/sound/click.mp3";
+var clickaudio = "../sound/click.mp3";
 
 $(window).on("load", function() {
     setTimeout(function(){
         $("#loading").addClass("loading--hide");
     }, 2500);
+    setTimeout(function(){
+        $(".loading__logo").addClass("logo-hide");
+    }, 2100);
 });
 
 $(document).ready(function(){
